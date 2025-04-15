@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactif</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><b>Quiz Interactif</b></h1>
+    <button style="text-align: center;" onclick=" lancerQuiz()">Démarrer le Quiz</button>
+    <script language ="JavaScript">
+        // 1. Préparer les questions
+        const QUESTIONS=[   ["Que signifie HTML ?", "HyperText Markup Language"],
+        ["Que signifie CSS ?", "Cascading Style Sheets"],
+        ["Quelle balise HTML est utilisée pour insérer une image ?", "img"],
+        ["Quel attribut HTML est utilisé pour donner un lien à une balise <a> ?", "href"],
+        ["Quelle propriété CSS est utilisée pour changer la couleur du texte ?", "color"],
+        ["Comment écrit-on un commentaire en HTML ?", "<!-- commentaire -->"],
+        ["Quelle propriété CSS permet de changer la taille du texte ?", "font-size"],
+        ["Quel est le sélecteur CSS pour sélectionner tous les éléments <p> ?", "p"],
+        ["Comment centre-t-on un texte en CSS ?", "text-align: center"],
+        ["Quelle balise HTML est utilisée pour créer un formulaire ?", "form"],
+        ["Que vérifie reponseUtilisateur !== null ?", "Elle vérifie que l'utilisateur n’a pas cliqué sur 'Annuler' dans le prompt()."],
+        ["À quoi sert reponseUtilisateur.trim() ?", "Elle supprime les espaces au début et à la fin de la réponse."],
+        ["Pourquoi utilise-t-on .toLowerCase() ?", "Pour convertir la réponse en minuscules et ignorer les majuscules/minuscules."],
+        ]
+        // 2. Fonction principale du quiz
+            function  lancerQuiz(){
+                let score =0;
+                 // 3. Boucle sur chaque question
+            for(let i=0; i<QUESTIONS.length;i++){
+                const question = QUESTIONS[i][0];//pour stocker la question
+                const bonneReponse = QUESTIONS[i][1];//pour stocker la bonne reponse
+                const reponseUtilisateur = prompt(question); // demander a l'utilisateur de saisir son reponse et le stocker dans une variable
+            if( reponseUtilisateur!==null && reponseUtilisateur.trim().toLocaleLowerCase== bonneReponse.toLocaleLowerCase() ) {
+                alert("tu as saisie la bonne reponse");
+                score++;
+            }
+            else
+            alert("tu as saisie une réponse fausse ");
+            }
+            }
+              // 4. Affichage du score
+            alert(" Tu as répondu correctement à " + score + " questions sur " + QUESTIONS.length);
+            // 5. Lancer le quiz automatiquement à l'ouverture
+                lancerQuiz();
+        </script>  
+</body>
+</html>
