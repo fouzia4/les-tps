@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #eabfbf; 
+    margin: 0; 
+    padding: 0; 
+    background-image: url();
+    flex-direction: column;
+    align-items: center;
+}
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 250px;
+    border: 1px solid #333030;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+h1 {
+    text-align: center; 
+    color: #693131;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    margin-bottom: 20px; 
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+//background-color: rgb(214, 192, 234);
+text-align: center;
+
+}
+.container{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.input-container input{
+    background-color: rgb(250, 241, 246);
+
+    width: 100;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #514242;
+    border-radius: 8px;
+}
+.input-container input[type="text"]{
+    width: 100%;
+    border: 1px solid #333030;
+
+}
+.input-container input[type="button"]{
+    background-color:  rgb(250, 186, 232);
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+
+}
+.input-container input[type="button"]:hover{
+    background-color: rgb(240, 206, 223);
+}
+ul{
+    
+    text-align: center;
+width: 90%;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+ul li{
+    width: 70%;
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 14px;
+    border-radius: 8px;
+    border: 0.125 solid #693131;
+    padding: 6px 12px;
+    background-color: azure;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;;
+}
+ul li:hover{
+    background-color: rgb(246, 191, 223);
+}
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+.btn{
+    background-color: #eabfbf;
+
+}
+.deleteBtn{
+    color: #573030;
+}
+.editBtn{
+    color: #693131;
+}
