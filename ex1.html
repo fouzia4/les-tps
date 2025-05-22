@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les opérateurs arithmétiques</title>
+</head>
+<body>
+    <div class="calculatrice">
+        <form action="ex1calculer.php" method="post">
+            <label for="nbr1"> Premier nombre</label>
+            <input type="number" name="nbr1" id="nbr1" required>
+            <label for="operation">Opération:</label>
+            <select name="operation" id="operation" required>
+                <option value="addition"> Addition (+)</option>
+                <option value="soustraction"> Soustraction (-)</option>
+                <option value="multiplication">Multiplication (*)</option>
+                <option value="division">Division (/)</option>
+            </select>
+            <label for="nbr2">Deuxième nombre:</label>
+            <input type="number" name="nbr2" id="nbr2" required>
+            <button type="submit"> Calculer</button>
+        </form>
+    </div>
+</body>
+</html>

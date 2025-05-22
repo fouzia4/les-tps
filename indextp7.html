@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon formulaire</title>
+</head>
+<body>
+    <h1> formulaire</h1>
+    <form action="reponce.php" method="post">
+        <select name="titre">
+            <option value="M.">M.</option>
+            <option value="Mme" selected>Mme</option>
+            <option value="Autre">Autre</option>
+        </select><br><br>
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" id="nom" placeholder="saisir votre nom"><br><br>
+        <label for="prenom">Prenom:</label>
+        <input type="text" name="prenom" id="prenom" placeholder="saisir votre prenom"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="nomprenom@gmail.com"><br><br>
+        <label for="annee"> Votre année de naissance:</label>
+        <input type="text" name="annee" id="annee" placeholder="2019"><br><br>
+        <label for="motpasse"> Donnez un mot de passe</label>
+        <input type="text" name="motpasse" id="motpasse" placeholder="mot de passe"><br><br>
+        <label for="sexe">Sexe:</label>
+        <input type="radio" name="sexe" id="sexe" value="H" checked/>Masculin
+        <input type="radio" name="sexe" id="sexe" value="F"/> Féminin
+        <br><br>
+        <input type="checkbox" name="debutant" checked="checked"/> Je debute en PHP<br><br>
+        <input type="submit" name="btOK" value="Envoyer">
+        </form>
+
+    
+
+    </form>  
+</body>
+</html>
